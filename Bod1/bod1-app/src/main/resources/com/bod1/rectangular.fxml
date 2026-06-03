@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bod1.Controller">
+   <children>
+      <Label layoutX="40.0" layoutY="25.0" prefWidth="520.0" text="RGB7003 - Тэгш өнцөгт">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="40.0" layoutY="71.0" prefWidth="520.0" text="Өгөгдсөн тэгш өнцөгтийн талбай ба периметрийг ол." textFill="#444444" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="68.0" layoutY="175.0" prefHeight="25.0" prefWidth="99.0" text="Урт:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLength" layoutX="168.0" layoutY="175.0" prefHeight="30.0" prefWidth="120.0" promptText="Жишээ: 6" />
+
+      <Label layoutX="68.0" layoutY="225.0" prefHeight="25.0" prefWidth="99.0" text="Өргөн:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtWidth" layoutX="168.0" layoutY="225.0" prefHeight="30.0" prefWidth="120.0" promptText="Жишээ: 4" />
+
+      <Button layoutX="320.0" layoutY="195.0" mnemonicParsing="false" onAction="#OnButtonClick" prefHeight="37.0" prefWidth="120.0" text="Тооцоолох" />
+
+      <Label layoutX="68.0" layoutY="310.0" prefHeight="25.0" prefWidth="99.0" text="Хариу:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblResult" layoutX="168.0" layoutY="310.0" prefHeight="28.0" prefWidth="300.0" text="" textFill="#5d86c0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
