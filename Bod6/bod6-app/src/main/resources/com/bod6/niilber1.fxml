@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bod6.Controller">
    <children>
-      <Label layoutX="40.0" layoutY="25.0" prefWidth="520.0" text="RGB7070 - Нийлбэр 1 (Давталтгүй)" textFill="#4d327a">
+      <Label layoutX="40.0" layoutY="25.0" prefWidth="520.0" text="RGB7070 - Нийлбэр 1 (Давталтгүй)" textFill="#000000">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -34,7 +34,7 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <Label fx:id="lblSumResult" layoutX="210.0" layoutY="238.0" prefHeight="30.0" prefWidth="300.0" textFill="#2d1d4d">
+      <Label fx:id="lblSumResult" layoutX="210.0" layoutY="238.0" prefHeight="30.0" prefWidth="300.0" textFill="#000000">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>

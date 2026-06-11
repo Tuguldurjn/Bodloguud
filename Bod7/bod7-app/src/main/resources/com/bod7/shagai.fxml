@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bod7.Controller">
+   <children>
+      <Label layoutX="40.0" layoutY="25.0" prefWidth="520.0" text="RGB7090 - Шагай">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="40.0" layoutY="60.0" prefWidth="520.0" text="k ширхэг шагайг орхиход буух ялгаатай боломжийн тоог олно." textFill="#444444" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="40.0" layoutY="140.0" text="Шагайны тоо (k):">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtShagaiCount" layoutX="190.0" layoutY="138.0" prefHeight="30.0" prefWidth="140.0" promptText="Жишээ: 4" />
+      
+      <Button layoutX="350.0" layoutY="135.0" mnemonicParsing="false" onAction="#OnCalculateShagaiClick" prefHeight="35.0" prefWidth="140.0" text="Тооцоолох" />
+
+      <Label layoutX="40.0" layoutY="240.0" text="Ялгаатай буултын тоо:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblShagaiResult" layoutX="230.0" layoutY="238.0" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

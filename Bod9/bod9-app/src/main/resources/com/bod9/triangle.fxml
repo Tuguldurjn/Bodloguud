@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bod9.Controller">
+   <children>
+      <Label layoutX="40.0" layoutY="25.0" prefWidth="520.0" text="RGB7120 - Гурвалжин эсэх">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="40.0" layoutY="60.0" prefWidth="520.0" text="Өгөгдсөн 3 талаар гурвалжин байгуулж болох эсэхийг шалгана." textFill="#444444" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="40.0" layoutY="120.0" text="Гурван тал (a b c):">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSidesInput" layoutX="200.0" layoutY="118.0" prefHeight="30.0" prefWidth="150.0" promptText="Жишээ: 3 4 5" />
+      
+      <Label layoutX="40.0" layoutY="170.0" text="Харуулах хэлбэр:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbDisplayMode" layoutX="200.0" layoutY="168.0" prefHeight="30.0" prefWidth="150.0" value="Стандарт текст">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Стандарт текст" />
+               <String fx:value="Дэлгэрэнгүй тайлбар" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+
+      <Button layoutX="370.0" layoutY="165.0" mnemonicParsing="false" onAction="#OnCheckTriangleClick" prefHeight="35.0" prefWidth="120.0" text="Шалгах" />
+
+      <Label layoutX="40.0" layoutY="217.0" text="Хариу:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCheckResult" layoutX="102.0" layoutY="224.0" prefHeight="164.0" prefWidth="451.0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
